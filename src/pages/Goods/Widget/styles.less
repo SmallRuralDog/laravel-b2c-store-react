@@ -1,0 +1,75 @@
+.sku_group_title {
+    position: relative;
+    padding: 7px 10px;
+    background-color: #f5f7fa;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    font-size: 13px;
+}
+
+.sku_group_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px 10px;
+    font-size: 13px;
+    min-height: 46px;
+    .sku_values_item {
+        box-sizing: border-box;
+        position: relative;
+        .sku_values_item_del_btn {
+            line-height: 1;
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            display: none;
+        }
+        .sku_values_item_edit_btn {
+            line-height: 1;
+            position: absolute;
+            top: -7px;
+            right: 12px;
+            display: none;
+        }
+    }
+    .sku_values_item:hover {
+        .sku_values_item_del_btn {
+            display: block;
+        }
+        .sku_values_item_edit_btn {
+            display: block;
+        }
+    }
+    .sku_image {
+        display: inline-block;
+        position: relative;
+        .arrow {
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -7px;
+            left: 50%;
+            margin-left: -2.5px;
+            border-style: solid;
+            border-color: transparent;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #666;
+        }
+        .arrow:after {
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            top: 0;
+            margin-left: -10px;
+            border-bottom-color: #fff;
+            border-top-width: 0;
+            content: "";
+        }
+    }
+}
+.ant-table-middle > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td{
+    padding: 2px;
+}
